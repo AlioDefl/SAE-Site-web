@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #222;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Barre de navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-weight: lighter;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+h3 img {
+    margin-right: 10px;
+}
+
+/* Slogan */
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 10%; /* Ajuste l'espace au-dessus du slogan */
+    margin-bottom: 10%; /* Ajuste l'espace en dessous */
+}
+
+.slogan p {
+    font-weight: lighter;
+    font-size: 60px; /* Augmente la taille du texte */
+    color: #444;
+    margin: 0; /* Évite les marges par défaut du <p> */
+}
+
+
+/* Barre de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    width: 70%;
+    height: 60px; /* Ajustée pour s'aligner sur le design original */
+    margin: 20px auto;
+    box-sizing: border-box;
+    margin-bottom: 15%;
+
+}
+
+
+
+.option {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.option label {
+    display: block;
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.option input {
+    width: 100%;
+    border: none; /* Suppression des bords */
+    background-color: transparent; /* Fond transparent */
+    padding: 8px;
+    font-size: 0.9rem;
+    color: #333;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.option input:focus {
+    outline: none; /* Supprime le contour par défaut */
+}
+
+.search-bar {
+    gap: 10px; /* Ajoute de l'espacement entre les champs */
+}
+
+
+.circle-button {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.circle-button:hover {
+    background-color: #0056b3;
+}
+
+.circle-button .icon {
+    color: #fff;
+}
+/* Pages Section */
+.pages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 1500px;
+    height: 400px;
+    gap: 20px;
+    margin-bottom: 15%;
+}
+
+.pages {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.pages:hover {
+    transform: translateY(-5px);
+}
+
+.pages img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pages .text-overlay {
+    padding: 50px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.pages .description {
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    background-color: #f6f6f6; /* Couleur de fond */
+    padding: 20px 40px; /* Espacement interne */
+    margin-top: 50px; /* Espacement au-dessus */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+/* Assurer que le contenu interne est bien aligné */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px; /* Optionnel : limite la largeur du contenu */
+    margin: 0 auto; /* Centre le contenu */
+}
+
+.footer-left h4 {
+    color: #333;
+    font-size: 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-right ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+.footer-right ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-right ul li a:hover {
+    color: #0056b3;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>OpenAI</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3><img src="img/openai.svg" alt="Logo">OpenAI</h3>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="aide.html">Aide</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slogan">
+        <p>Ensemble, vers un avenir plus intelligent et durable.</p>
+    </div>
+    <form class="search-bar">
+        <div class="option">
+        
+            <input type="text" id="departure" name="departure" placeholder="Départ">
+        </div>
+        <div class="option">
+         
+            <input type="text" id="destination" name="destination" placeholder="Destination">
+        </div>
+        <div class="option last-option">
+          
+            <input type="text" id="date" name="date" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+        </div>
+        <form action="recherche.html" method="get">
+            <button class="circle-button" type="submit">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <path d="M22 12H2M12 22L2 12l10-10"/>
+                </svg>
+            </button>
+        </form>
+        
+        
+    </form>
+    <div class="pages-container">
+        <div class="pages">
+            <img src="img/fond1.webp" alt="fond1">
+            <p class="text-overlay">Collaboration et Connexion Humaine</p>
+            <p class="description">Favoriser les liens entre collègues et encourager les échanges informels pendant les trajets pour renforcer l'esprit d'équipe.</p>
+        </div>
+        <div class="pages">
+            <img src="img/fond2.webp" alt="fond3">
+            <p class="text-overlay">Engagement pour un Avenir Durable</p>
+            <p class="description">Réduire l’empreinte carbone de l’entreprise en incitant les employés à partager leurs trajets, en phase avec une vision de durabilité</p>
+        </div>
+        <div class="pages">
+            <img src="img/fond3.webp" alt="fond4">
+            <p class="text-overlay">Innovation et Simplicité d’Utilisation</p>
+            <p class="description">Offrir une plateforme intuitive et optimisée avec des fonctionnalités avancées pour rendre l'expérience de covoiturage fluide et agréable.</p>
+        </div>
+        <div class="pages">
+            <img src="img/fond4.webp" alt="fond5" class="image">
+            <p class="text-overlay">Sécurité et Confiance</p>
+            <p class="description">Assurer un environnement sûr pour les utilisateurs, avec des vérifications de profils et des options de confidentialité.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h4>OpenAI</h4>
+                <p>&copy; 2024 OpenAI. Tous droits réservés.</p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Carrières</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

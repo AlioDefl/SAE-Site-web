@@ -1,0 +1,222 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Rendre les cartes cliquables */
+.card {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .info, .card .price, .card .extras {
+    margin-bottom: 10px;
+}
+
+.card .time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .time .line {
+    flex: 1;
+    height: 2px;
+    background: #333;
+}
+
+.card .details p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card .price span {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card .extras span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card .tag {
+    background: #007bff;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+.info {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.time {
+    text-align: center;
+    flex: 1;
+}
+
+.time .line {
+    width: 50px;
+    height: 2px;
+    background: #333;
+    margin: 5px auto;
+}
+
+.details {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.price {
+    flex: 1;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.price p {
+    font-size: 0.8rem;
+    color: #e74c3c;
+}
+
+.extras {
+    flex: 1;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.extras span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tag {
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+}
+
+.search-bar-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    width: 70%;
+    height: 60px; /* Ajustée pour s'aligner sur le design original */
+    margin: 20px auto;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+
+
+.option {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+}
+
+.option label {
+    display: block;
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+.option input {
+    width: 100%;
+    border: none; /* Suppression des bords */
+    background-color: transparent; /* Fond transparent */
+    padding: 8px;
+    font-size: 0.9rem;
+    color: #333;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.option input:focus {
+    outline: none; /* Supprime le contour par défaut */
+}
+
+.search-bar {
+    gap: 10px; /* Ajoute de l'espacement entre les champs */
+}
+
+
+.circle-button {
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.circle-button:hover {
+    background-color: #0056b3;
+}
+
+.circle-button .icon {
+    color: #fff;
+}

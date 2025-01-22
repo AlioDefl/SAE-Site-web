@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-top: 5%;
+}
+
+.aide {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p, li {
+    margin: 10px 0;
+}
+
+.gras {
+    font-weight: bold;
+    color: #007bff;
+}
+
+ol, ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+li {
+    margin: 8px 0;
+}
+
